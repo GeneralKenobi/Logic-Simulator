@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{c9cdedec-7f31-40b7-88f4-bbc92ce61dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FunctionHelpers">
+      <UniqueIdentifier>{9140da5a-4203-4d65-b671-cfbf737f270a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Identifiable">
+      <UniqueIdentifier>{46bdaa6d-25f6-4801-b546-d498e8ce17bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements">
+      <UniqueIdentifier>{68886780-9fb5-425a-a8b7-6dbc6778f097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Sockets">
+      <UniqueIdentifier>{702f8973-7977-42ba-abff-f474bed705b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Sockets\OutputSocket">
+      <UniqueIdentifier>{5468f3c1-d70b-4ca4-aa36-185f1259f7d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Sockets\InputSocket">
+      <UniqueIdentifier>{6c6fc6e6-c029-4cc2-8a20-f4bb76de5801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts">
+      <UniqueIdentifier>{886953ca-9a0f-4709-a73e-2e8469e8b449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\BasePart">
+      <UniqueIdentifier>{4c6b33f5-f7d3-4e5c-8753-740f7d7699fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MultiInputGates">
+      <UniqueIdentifier>{c9d377e8-5704-4bab-9940-24b420cbd1e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MultiInputGates\BaseMultiInputGate">
+      <UniqueIdentifier>{b5a146d2-eba0-4b0f-baa7-148a4064ba7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MultiInputGates\ORGate">
+      <UniqueIdentifier>{8191c045-f15b-4cc7-93f8-c9e8b073e14c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\Inputs">
+      <UniqueIdentifier>{ff9abe28-e218-4f42-8332-971f5bf7c715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\Inputs\ToggleInput">
+      <UniqueIdentifier>{64410e0b-5be1-49ac-81f8-c8702e9ac3ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Node">
+      <UniqueIdentifier>{50c1d887-dee6-4d6f-bae5-236a86818245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl">
+      <UniqueIdentifier>{47e2e831-1ee9-4606-a4fc-e008d84545e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl\FlowControl">
+      <UniqueIdentifier>{8bef5557-2a31-4e47-935f-d3709dcf2be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl\Commands">
+      <UniqueIdentifier>{003d5ff1-88ed-44fb-b64a-f6d2a8d096a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl\PrintManager">
+      <UniqueIdentifier>{2c4ea2c7-fea4-4fac-86c8-6f8588941db0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl\PrintManager\Line">
+      <UniqueIdentifier>{ec15cd01-3b6a-48c8-905c-6e3f0c2bb754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\Inputs\ClockInput">
+      <UniqueIdentifier>{6eb1f5f3-e4a5-4827-aeee-fe5227228235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MultiInputGates\ANDGate">
+      <UniqueIdentifier>{cbf33a74-4658-44aa-9f46-b1a2eb37fc22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl\PrintManager\Sector Printing">
+      <UniqueIdentifier>{72108e61-491f-4ea7-b539-33da5f130769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl\PrintManager\Helpers">
+      <UniqueIdentifier>{f4cecf86-1411-4614-8859-2805b03adc42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl\FlowControl\ArrowPosition">
+      <UniqueIdentifier>{28b5a1c0-0aed-463f-bbe0-b909e2063717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl\PrintManager\Navigation Related">
+      <UniqueIdentifier>{b1171588-6130-4acc-a9b4-ddcf202e99de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl\FlowControl\Area">
+      <UniqueIdentifier>{1673855f-a24e-4f1a-aec0-32c065634008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProgramControl\FlowControl\InputInterpretation">
+      <UniqueIdentifier>{a6504c25-fbc6-4de7-ad2b-6cad4d0a29ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StringHelpers">
+      <UniqueIdentifier>{ab603377-8bfc-44af-8584-e44bd80a556c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MultiInputGates\NORGate">
+      <UniqueIdentifier>{8d38d139-0442-45ac-b9ff-f792cf336a3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MultiInputGates\NANDGate">
+      <UniqueIdentifier>{f6cfbfd8-ba19-401f-8119-cf93164cdac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MultiInputGates\XORGate">
+      <UniqueIdentifier>{d2f89bf8-9f37-48eb-8145-7b8c4f726ce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MultiInputGates\XNORGate">
+      <UniqueIdentifier>{95ddc49a-5f4b-4fb2-9be6-19bfbdb70129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\NOTGate">
+      <UniqueIdentifier>{75fd24d8-d2c7-4cd1-a7a9-4a8f82633afe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\Inputs\BaseInput">
+      <UniqueIdentifier>{514ccfaa-5385-4a49-9d36-0ec29668c9c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\Inputs\ButtonInput">
+      <UniqueIdentifier>{9535081d-0933-4e28-b6dd-553bc41b45db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops">
+      <UniqueIdentifier>{ce6b2203-b795-409f-87b1-a1c6c5435c4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops\D type">
+      <UniqueIdentifier>{f4d993bd-b42e-4cec-b2f4-8d8ef1357099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops\D type\FlipFlop">
+      <UniqueIdentifier>{080ba5cf-d2e6-407f-860d-14c0ea27b7fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops\D type\Latch">
+      <UniqueIdentifier>{77966495-5db7-42e3-ac11-4e6a27b35627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops\T type">
+      <UniqueIdentifier>{f20e9c72-7596-4c35-9adc-26b9b595e69b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops\T type\Latch">
+      <UniqueIdentifier>{f801ea6f-69b4-4e96-8e2b-2ce6c00899d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops\T type\FlipFlop">
+      <UniqueIdentifier>{4513e5d6-c41f-4b55-9a1d-b3b8df614a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops\JK type">
+      <UniqueIdentifier>{32ab4334-476d-4578-aa58-832be9128f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops\JK type\Latch">
+      <UniqueIdentifier>{dd918991-8361-4466-9f70-0b37c3587391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops\JK type\FlipFlop">
+      <UniqueIdentifier>{a7048251-0db1-49e6-93a9-8c42b6d63c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MUX and DMUX">
+      <UniqueIdentifier>{8b970ced-e80d-4817-8434-6b0a496defa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MUX and DMUX\Multiplexer">
+      <UniqueIdentifier>{5806f569-508d-4962-a838-57ce1336c0bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MUX and DMUX\Demultiplexer">
+      <UniqueIdentifier>{766a4bf7-58a5-4ea9-97a9-2211119ea33c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\MUX and DMUX\BaseMuxDmux">
+      <UniqueIdentifier>{1bb54d64-053f-46fe-9d4e-7db8ba4ab855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\FlipFlops\BaseLatch">
+      <UniqueIdentifier>{8b005004-f181-4017-b8d8-503b42c691a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\CustomLogic">
+      <UniqueIdentifier>{e20f6d81-1038-47d5-ba9e-b6741c00842f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\Propagator">
+      <UniqueIdentifier>{6b8afac3-f1b4-4ac7-82e7-d6120a1757f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\IEventSubscriber">
+      <UniqueIdentifier>{b9717489-5d83-4976-ad1d-8b9402682215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CircuitElements\Parts\Output">
+      <UniqueIdentifier>{5fba05d5-0c67-4a76-875e-ff4bfb4f8443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exceptions">
+      <UniqueIdentifier>{ea239ad8-b858-43b2-b8e5-b50e6f90608e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event">
+      <UniqueIdentifier>{6220e079-9bf8-4244-84e8-6ce9afb07537}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ForwardDeclarations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionHelpers.h">
+      <Filter>FunctionHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IEventSubscriber.h">
+      <Filter>Interfaces\IEventSubscriber</Filter>
+    </ClInclude>
+    <ClInclude Include="Identifiable.h">
+      <Filter>Interfaces\Identifiable</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputSocket.h">
+      <Filter>CircuitElements\Sockets\OutputSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSocket.h">
+      <Filter>CircuitElements\Sockets\InputSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="BasePart.h">
+      <Filter>CircuitElements\Parts\BasePart</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseMultiInputGate.h">
+      <Filter>CircuitElements\Parts\MultiInputGates\BaseMultiInputGate</Filter>
+    </ClInclude>
+    <ClInclude Include="ORGate.h">
+      <Filter>CircuitElements\Parts\MultiInputGates\ORGate</Filter>
+    </ClInclude>
+    <ClInclude Include="ToggleInput.h">
+      <Filter>CircuitElements\Parts\Inputs\ToggleInput</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>CircuitElements\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="FlowControl.h">
+      <Filter>ProgramControl\FlowControl</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands.h">
+      <Filter>ProgramControl\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintManager.h">
+      <Filter>ProgramControl\PrintManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivateCommands.h">
+      <Filter>ProgramControl\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivateFlowControl.h">
+      <Filter>ProgramControl\FlowControl</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivatePrintManager.h">
+      <Filter>ProgramControl\PrintManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>ProgramControl\PrintManager\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="ClockInput.h">
+      <Filter>CircuitElements\Parts\Inputs\ClockInput</Filter>
+    </ClInclude>
+    <ClInclude Include="ANDGate.h">
+      <Filter>CircuitElements\Parts\MultiInputGates\ANDGate</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrowPosition.h">
+      <Filter>ProgramControl\FlowControl\ArrowPosition</Filter>
+    </ClInclude>
+    <ClInclude Include="Area.h">
+      <Filter>ProgramControl\FlowControl\Area</Filter>
+    </ClInclude>
+    <ClInclude Include="StringHelpers.h">
+      <Filter>StringHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="NORGate.h">
+      <Filter>CircuitElements\Parts\MultiInputGates\NORGate</Filter>
+    </ClInclude>
+    <ClInclude Include="NANDGate.h">
+      <Filter>CircuitElements\Parts\MultiInputGates\NANDGate</Filter>
+    </ClInclude>
+    <ClInclude Include="XORGate.h">
+      <Filter>CircuitElements\Parts\MultiInputGates\XORGate</Filter>
+    </ClInclude>
+    <ClInclude Include="XNORGate.h">
+      <Filter>CircuitElements\Parts\MultiInputGates\XNORGate</Filter>
+    </ClInclude>
+    <ClInclude Include="NOTGate.h">
+      <Filter>CircuitElements\Parts\NOTGate</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseInput.h">
+      <Filter>CircuitElements\Parts\Inputs\BaseInput</Filter>
+    </ClInclude>
+    <ClInclude Include="MUX.h">
+      <Filter>CircuitElements\Parts\MUX and DMUX\Multiplexer</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonInput.h">
+      <Filter>CircuitElements\Parts\Inputs\ButtonInput</Filter>
+    </ClInclude>
+    <ClInclude Include="DMUX.h">
+      <Filter>CircuitElements\Parts\MUX and DMUX\Demultiplexer</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseLatch.h">
+      <Filter>CircuitElements\Parts\FlipFlops\BaseLatch</Filter>
+    </ClInclude>
+    <ClInclude Include="DLatch.h">
+      <Filter>CircuitElements\Parts\FlipFlops\D type\Latch</Filter>
+    </ClInclude>
+    <ClInclude Include="DFlipFlop.h">
+      <Filter>CircuitElements\Parts\FlipFlops\D type\FlipFlop</Filter>
+    </ClInclude>
+    <ClInclude Include="TLatch.h">
+      <Filter>CircuitElements\Parts\FlipFlops\T type\Latch</Filter>
+    </ClInclude>
+    <ClInclude Include="TFlipFlop.h">
+      <Filter>CircuitElements\Parts\FlipFlops\T type\FlipFlop</Filter>
+    </ClInclude>
+    <ClInclude Include="JKLatch.h">
+      <Filter>CircuitElements\Parts\FlipFlops\JK type\Latch</Filter>
+    </ClInclude>
+    <ClInclude Include="JKFlipFlop.h">
+      <Filter>CircuitElements\Parts\FlipFlops\JK type\FlipFlop</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseMuxDmux.h">
+      <Filter>CircuitElements\Parts\MUX and DMUX\BaseMuxDmux</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomLogic.h">
+      <Filter>CircuitElements\Parts\CustomLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Output.h">
+      <Filter>CircuitElements\Parts\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="Propagator.h">
+      <Filter>CircuitElements\Parts\Propagator</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicSimulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Identifiable.cpp">
+      <Filter>Interfaces\Identifiable</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputSocket.cpp">
+      <Filter>CircuitElements\Sockets\OutputSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSocket.cpp">
+      <Filter>CircuitElements\Sockets\InputSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="BasePart.cpp">
+      <Filter>CircuitElements\Parts\BasePart</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseMultiInputGate.cpp">
+      <Filter>CircuitElements\Parts\MultiInputGates\BaseMultiInputGate</Filter>
+    </ClCompile>
+    <ClCompile Include="ORGate.cpp">
+      <Filter>CircuitElements\Parts\MultiInputGates\ORGate</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>CircuitElements\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="FlowControl.cpp">
+      <Filter>ProgramControl\FlowControl</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands.cpp">
+      <Filter>ProgramControl\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintManager.cpp">
+      <Filter>ProgramControl\PrintManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ToggleInput.cpp">
+      <Filter>CircuitElements\Parts\Inputs\ToggleInput</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>ProgramControl\PrintManager\Line</Filter>
+    </ClCompile>
+    <ClCompile Include="ClockInput.cpp">
+      <Filter>CircuitElements\Parts\Inputs\ClockInput</Filter>
+    </ClCompile>
+    <ClCompile Include="ANDGate.cpp">
+      <Filter>CircuitElements\Parts\MultiInputGates\ANDGate</Filter>
+    </ClCompile>
+    <ClCompile Include="PartList.cpp">
+      <Filter>ProgramControl\PrintManager\Sector Printing</Filter>
+    </ClCompile>
+    <ClCompile Include="PartInfo.cpp">
+      <Filter>ProgramControl\PrintManager\Sector Printing</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandLine.cpp">
+      <Filter>ProgramControl\PrintManager\Sector Printing</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers.cpp">
+      <Filter>ProgramControl\PrintManager\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrowPosition.cpp">
+      <Filter>ProgramControl\FlowControl\ArrowPosition</Filter>
+    </ClCompile>
+    <ClCompile Include="NavigationRelated.cpp">
+      <Filter>ProgramControl\PrintManager\Navigation Related</Filter>
+    </ClCompile>
+    <ClCompile Include="Area.cpp">
+      <Filter>ProgramControl\FlowControl\Area</Filter>
+    </ClCompile>
+    <ClCompile Include="InputInterpretation.cpp">
+      <Filter>ProgramControl\FlowControl\InputInterpretation</Filter>
+    </ClCompile>
+    <ClCompile Include="StringHelpers.cpp">
+      <Filter>StringHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ParsingComands.cpp">
+      <Filter>ProgramControl\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="NORGate.cpp">
+      <Filter>CircuitElements\Parts\MultiInputGates\NORGate</Filter>
+    </ClCompile>
+    <ClCompile Include="NANDGate.cpp">
+      <Filter>CircuitElements\Parts\MultiInputGates\NANDGate</Filter>
+    </ClCompile>
+    <ClCompile Include="XORGate.cpp">
+      <Filter>CircuitElements\Parts\MultiInputGates\XORGate</Filter>
+    </ClCompile>
+    <ClCompile Include="XNORGate.cpp">
+      <Filter>CircuitElements\Parts\MultiInputGates\XNORGate</Filter>
+    </ClCompile>
+    <ClCompile Include="NOTGate.cpp">
+      <Filter>CircuitElements\Parts\NOTGate</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseInput.cpp">
+      <Filter>CircuitElements\Parts\Inputs\BaseInput</Filter>
+    </ClCompile>
+    <ClCompile Include="MUX.cpp">
+      <Filter>CircuitElements\Parts\MUX and DMUX\Multiplexer</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonInput.cpp">
+      <Filter>CircuitElements\Parts\Inputs\ButtonInput</Filter>
+    </ClCompile>
+    <ClCompile Include="DMUX.cpp">
+      <Filter>CircuitElements\Parts\MUX and DMUX\Demultiplexer</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseLatch.cpp">
+      <Filter>CircuitElements\Parts\FlipFlops\BaseLatch</Filter>
+    </ClCompile>
+    <ClCompile Include="DLatch.cpp">
+      <Filter>CircuitElements\Parts\FlipFlops\D type\Latch</Filter>
+    </ClCompile>
+    <ClCompile Include="DFlipFlop.cpp">
+      <Filter>CircuitElements\Parts\FlipFlops\D type\FlipFlop</Filter>
+    </ClCompile>
+    <ClCompile Include="TLatch.cpp">
+      <Filter>CircuitElements\Parts\FlipFlops\T type\Latch</Filter>
+    </ClCompile>
+    <ClCompile Include="TFlipFlop.cpp">
+      <Filter>CircuitElements\Parts\FlipFlops\T type\FlipFlop</Filter>
+    </ClCompile>
+    <ClCompile Include="JKLatch.cpp">
+      <Filter>CircuitElements\Parts\FlipFlops\JK type\Latch</Filter>
+    </ClCompile>
+    <ClCompile Include="JKFlipFlop.cpp">
+      <Filter>CircuitElements\Parts\FlipFlops\JK type\FlipFlop</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseMuxDmux.cpp">
+      <Filter>CircuitElements\Parts\MUX and DMUX\BaseMuxDmux</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomLogic.cpp">
+      <Filter>CircuitElements\Parts\CustomLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Output.cpp">
+      <Filter>CircuitElements\Parts\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="Propagator.cpp">
+      <Filter>CircuitElements\Parts\Propagator</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

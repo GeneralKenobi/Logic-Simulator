@@ -1,0 +1,39 @@
+#pragma once
+#include "stdafx.h"
+
+class Exception;
+class Line;
+class Identifiable;
+class IFinalize;
+class Node;
+template<typename... EventArgs> class IEventSubscriber;
+template<typename... EventArgs> class Event;
+class Socket;
+class InputSocket;
+class OutputSocket;
+class Output;
+class BasePart;
+class BaseMultiInputGate;
+class BaseInput;
+class Propagator;
+class NOTGate;
+class ORGate;
+class NORGate;
+class ANDGate;
+class NANDGate;
+class XORGate;
+class XNORGate;
+class ToggleInput;
+class ClockInput;
+class ButtonInput;
+class BaseMuxDmux;
+class MUX;
+class DMUX;
+class BaseLatch;
+class DFlipFlop;
+class DLatch;
+class TLatch;
+class TFlipFlop;
+class JKLatch;
+class JKFlipFlop;
+class CustomLogic;
