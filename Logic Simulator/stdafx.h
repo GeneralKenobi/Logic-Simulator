@@ -10,7 +10,6 @@
 
 #include "targetver.h"
 
-#include <filesystem>
 #include <deque>
 #include <vector>
 #include <set>

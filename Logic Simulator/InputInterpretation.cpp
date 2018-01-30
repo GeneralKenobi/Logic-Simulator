@@ -132,20 +132,6 @@ void UpArrowPressed()
 }
 
 
-// Switches between going through part list and command line
-void TabPressed()
-{
-	if (CurrentArea.Get() == Sector::CommandLine)
-	{
-		CurrentArea.Set(Sector::PartList);
-	}
-	else
-	{
-		CurrentArea.Set(Sector::CommandLine);
-	}
-}
-
-
 // Prints the key on the screen and adds it to the current command (if it's a letter/number/','
 void DefaultKeyPressed(char c)
 {

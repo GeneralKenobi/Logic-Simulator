@@ -8,9 +8,6 @@ void DownArrowPressed();
 // Moves up in the parts list / Moves up in the part's info / inputs the previous command into line
 void UpArrowPressed();
 
-// Switches between going through part list and command line
-void TabPressed();
-
 // Prints the key on the screen and adds it to the current command (if it's a letter/number/','
 void DefaultKeyPressed(char c);
 

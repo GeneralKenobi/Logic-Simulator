@@ -102,13 +102,7 @@ void MainLoop()
 							EnterPressed();
 						}
 						break;
-												
-						// When tab is pressed
-						case VK_TAB:
-						{							
-							TabPressed();
-						}
-						break;
+
 
 						// When right arrow is pressed, if we're in part list,
 						// Go to part info
@@ -117,7 +111,7 @@ void MainLoop()
 							if (Parts.size() > 0 && CurrentArea.Get() == Sector::PartList)
 							{
 								CurrentArea.Set(Sector::PartInfo);								
-							}							
+							}
 						}
 						break;
 
@@ -128,7 +122,7 @@ void MainLoop()
 							if (CurrentArea.Get() == Sector::PartInfo)
 							{
 								CurrentArea.Set(Sector::PartList);
-							}						
+							}
 						}
 						break;
 
