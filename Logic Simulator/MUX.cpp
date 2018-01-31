@@ -202,12 +202,12 @@ std::list<Line> MUX::GenerateInfo()
 	l.push_back(Line());
 
 	// Addresses info
-	l.push_back(Line("Addresses (" + std::to_string(mSize) + "):"));
+	l.push_back(Line("Addresses (" + std::to_string(mSize) + "), topmost is most significant bit:"));
 	l.splice(l.end(), CompactMode() ? GenerateAddressInfoCompact() : GenerateAddressInfo());
 	l.push_back(Line());
 
 	// Inputs info
-	l.push_back(Line("Inputs (" + std::to_string(mInputs.size()) + "):"));
+	l.push_back(Line("Inputs (" + std::to_string(mInputs.size()) + "), topmost is addressed 0:"));
 	l.splice(l.end(), CompactMode() ? GenerateInputsInfoCompact() : GenerateInputsInfo());
 
 	return l;

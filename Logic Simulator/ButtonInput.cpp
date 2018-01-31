@@ -27,7 +27,7 @@ std::list<Line> ButtonInput::GenerateInfo()
 {
 	std::list<Line> l = BasePart::GenerateInfo();
 
-	l.push_back(Line("On duration: " + std::to_string(mPeriod) + "ms (QC) Change"));
+	l.push_back(Line("On duration: " + std::to_string(mPeriod)));
 	l.push_back(Line("Output:"));
 	l.push_back(Line());
 	l.splice(l.end(), mOutput->GenerateInfo());
@@ -62,17 +62,6 @@ int ButtonInput::SelectableLines()
 }
 
 
-// Sets a new period for the clock, values can range from 1-100k
-void ButtonInput::SetPeriod(int newPeriod)
-{
-	if (newPeriod > 0 && newPeriod <= 1e5)
-	{
-		mPeriod = newPeriod;
-		PrintManager(Sector::PartInfo);
-	}
-}
-
-
 // Performs quick action for the given line (if there's an action to perform)
 void ButtonInput::QuickActionRequest(int index)
 {
@@ -83,12 +72,6 @@ void ButtonInput::QuickActionRequest(int index)
 		case 2:
 		{
 			BasePart::QuickActionRequest(index);
-		}
-		break;
-
-		case 3:
-		{
-			QuickActionCommand("ButtonPeriod " + std::to_string(ID()) + ",");
 		}
 		break;
 		

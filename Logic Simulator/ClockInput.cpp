@@ -62,6 +62,10 @@ void ClockInput::SetPeriod(int newPeriod)
 		mPeriod = newPeriod;
 		PrintManager(Sector::PartInfo);
 	}
+	else
+	{
+		throw Exception("Incorrect clock period (should be between 50 and 5000)");
+	}
 }
 
 

@@ -54,10 +54,9 @@ void TLatch::TChanged()
 	{
 		ComputeOutput();
 	}
-	else
-	{
-		PrintManagerStatus(Sector::PartInfo, ID());
-	}
+	
+	PrintManagerStatus(Sector::PartInfo, ID());
+	
 }
 
 

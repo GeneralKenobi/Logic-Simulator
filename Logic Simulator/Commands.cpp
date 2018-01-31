@@ -137,10 +137,9 @@ void DeleteCommand(std::string arg)
 			UnlockInfo();
 		}
 
-		Parts.remove(owner);
-		owner.reset();
+		PartListPosition.SetLast(Parts.size() - 1);
 
-		PartListPosition.SetLast(Parts.size());
+		Parts.remove(owner);
 
 		if (Parts.empty())
 		{
@@ -150,6 +149,8 @@ void DeleteCommand(std::string arg)
 		RecalculateMaxInfoLines();
 
 		PrintArrows(Sector::PartList);
+
+		owner.reset();
 	}
 	else
 	{
@@ -167,7 +168,7 @@ void ClockPeriodCommand(std::string args)
 	// If it was found
 	if (comma == std::string::npos)
 	{
-		throw Exception("ClockPeriod requires 2 arguments (\"Connect 2,4\"");
+		throw Exception("ClockPeriod requires 2 arguments (\"Connect 2,4\")");
 	}
 
 	int firstArgument = -1, secondArgument = -1;
@@ -438,8 +439,16 @@ void SaveCommand(std::string arg)
 		connections = connections.substr(0, connections.size()-1);
 	}
 
+	// Create a folder for the saved parts. If this folder alredy exist this function won't do anything
+	CreateDirectory(L"saves", NULL);
+
 	// Open the desired file
 	std::ofstream f("saves/" + arg + ".txt", std::ios::out);
+
+	if (!f.is_open())
+	{
+		throw Exception("Something went wrong");
+	}
 
 	// Input the connections as the first record
 	f << connections;

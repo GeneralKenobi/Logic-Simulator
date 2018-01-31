@@ -173,12 +173,12 @@ std::list<Line> DMUX::GenerateInfo()
 	l.push_back(Line());
 
 	// Addresses info
-	l.push_back(Line("Addresses (" + std::to_string(mSize) + "):"));
+	l.push_back(Line("Addresses (" + std::to_string(mSize) + "), topmost is most significant bit:"));
 	l.splice(l.end(), CompactMode() ? GenerateAddressInfoCompact() : GenerateAddressInfo());
 	l.push_back(Line());
 
 	// Outputs info
-	l.push_back(Line("Outputs (" + std::to_string(mOutputs.size()) + "):"));
+	l.push_back(Line("Outputs (" + std::to_string(mOutputs.size()) + "), topmost is addressed 0:"));
 	l.splice(l.end(), CompactMode() ? GenerateOutputsInfoCompact() : GenerateOutputsInfo());
 
 	return l;
@@ -275,15 +275,6 @@ std::list<Line> DMUX::GenerateOutputsStatus()
 void DMUX::PrintList()
 {
 	BasePart::PrintList();
-
-	if(mSelectedOutput)
-	{
-		PrintStatus(mSelectedOutput->Value());
-	}
-	else
-	{
-		PrintStatus(false);
-	}
 }
 
 

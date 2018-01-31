@@ -54,10 +54,9 @@ void DLatch::DChanged()
 	{
 		ComputeOutput();
 	}
-	else
-	{
-		PrintManagerStatus(Sector::PartInfo, ID());
-	}
+	
+	PrintManagerStatus(Sector::PartInfo, ID());
+	
 }
 
 

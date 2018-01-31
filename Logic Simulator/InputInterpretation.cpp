@@ -151,13 +151,19 @@ void SpacePressed()
 	{
 		case Sector::PartInfo:
 		{
-			CurrentPart()->QuickActionRequest(PartInfoPosition.Get());
+			if (!Parts.empty())
+			{
+				CurrentPart()->QuickActionRequest(PartInfoPosition.Get());
+			}
 		}
 		break;
 
 		case Sector::PartList:
 		{
-			CurrentListPart()->QuickListActionRequest();
+			if (!Parts.empty())
+			{
+				CurrentListPart()->QuickListActionRequest();
+			}
 		}
 		break;
 
@@ -212,8 +218,11 @@ void ShiftPressed()
 		}
 		else
 		{
-			LockedPosition = PartListPosition.Get();
-			LockInfo = !LockInfo;
+			if (!Parts.empty())
+			{
+				LockedPosition = PartListPosition.Get();
+				LockInfo = !LockInfo;
+			}
 		}
 	}
 }

@@ -31,9 +31,6 @@ public:
 	// Returns the number of selectable lines in this part's info
 	virtual int SelectableLines();
 
-	// Sets a new duration of the on period (in ms), values can range from 1-100k
-	void SetPeriod(int newPeriod);
-
 	#pragma endregion
 
 	#pragma region Virtual Methods

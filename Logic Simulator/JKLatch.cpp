@@ -53,10 +53,9 @@ void JKLatch::JKChanged()
 	{
 		ComputeOutput();
 	}
-	else
-	{
-		PrintManagerStatus(Sector::PartInfo, ID());
-	}
+	
+	PrintManagerStatus(Sector::PartInfo, ID());
+	
 }
 
 
