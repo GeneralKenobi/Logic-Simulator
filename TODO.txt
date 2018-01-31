@@ -1,3 +1,0 @@
-1. DONE Input Sockets can change values of their nodes - fix it. (only outputs should be able to do it)
-2. Parts can change other part's output socket's node's OwnerID (but they shouldn't be able to - fix it)
-3. Finish or remove compact printing from the program
